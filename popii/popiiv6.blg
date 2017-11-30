@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: popiiv6.aux
+The style file: pasa-mnras.bst
+Database file #1: references.bib
+You're missing a field part---line 248 of file references.bib
+ :    volume = 
+ :             ,
+I'm skipping whatever remains of this entry
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 33 entries,
+            2884 wiz_defined-function locations,
+            1007 strings with 22186 characters,
+and the built_in function-call counts, 14464 in all, are:
+= -- 1180
+> -- 1011
+< -- 62
++ -- 484
+- -- 120
+* -- 1909
+:= -- 2252
+add.period$ -- 0
+call.type$ -- 33
+change.case$ -- 66
+chr.to.int$ -- 32
+cite$ -- 33
+duplicate$ -- 714
+empty$ -- 734
+format.name$ -- 224
+if$ -- 2422
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 33
+newline$ -- 113
+num.names$ -- 196
+pop$ -- 174
+preamble$ -- 1
+purify$ -- 132
+quote$ -- 0
+skip$ -- 403
+stack$ -- 0
+substring$ -- 806
+swap$ -- 330
+text.length$ -- 132
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 297
+warning$ -- 0
+while$ -- 222
+width$ -- 0
+write$ -- 347
+(There was 1 error message)

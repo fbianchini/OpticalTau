@@ -1,0 +1,302 @@
+\documentclass[]{pasa}
+%[useAMS,usenatbib]{mn2e}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+%BEGIN USER-DEFINED SHORTFORMS
+%\def\spose#1{\hbox to 0pt{#1\hss}} 
+%\def\simlt{\mathrel{\spose{\lower 3pt\hbox{$\mathchar"218$}}
+%\raise 2.0pt\hbox{$\mathchar"13C$}}} 
+%\def\simgt{\mathrel{\spose{\lower 3pt\hbox{$\mathchar"218$}} 
+%\raise 2.0pt\hbox{$\mathchar"13E$}}} 
+%\def\eg{{\rm e.g.~}} \def\ie{{\rm i.e.~}} 
+\def\etal{{\rm et~al.~}} 
+%\def\half{{\scriptsize \frac{1}{2}}}
+%\usepackage{graphicx}
+%END USER-DEFINED SHORTFORMS 
+%\received{July 8, 2013}
+%\revised{July 31, 2013} 
+%\Accepted{} 
+%\journalid}{} 
+%\articleid{}{} 
+%\slugcomment{} 
+%\shortauthors{Mould \etal }
+%\shorttitle{Where is Pop II?}
+%\authoraddr{E-mail: matthew.colless@mso.anu.edu.au} 
+%\large % starts a new line in the author environment
+%\newauthor % starts a new line in the author environment
+%\\
+
+\usepackage{aas_macros}
+\usepackage{hyperref} 
+\hypersetup{colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue}
+
+
+\title[Draft Pop II]{Where is Population II?}
+
+\author {J.~Mould$^{1,2}$, F.~Bianchini$^3$, D.~Forbes$^1$, C.~L.~Reichardt$^3$ 
+%\altaffiltext{1}{test}
+\affil{$^1$Centre for Astrophysics and Supercomputing, Swinburne University, Vic 3122, Australia}
+\affil{$^2$CAASTRO}
+\affil{$^3$School of Physics, Melbourne University, Vic 3010, Australia}
+}
+
+
+
+%
+
+%\date{Released 2002 Xxxxx XX}
+%\pagerange{\pageref{firstpage}--\pageref{lastpage}} \pubyear{2002}
+\begin{document}
+\begin{frontmatter}
+\maketitle
+
+\begin{abstract}
+The use of roman numerals for stellar populations represents a classification
+approach to galaxy formation which is now well behind us. Nevertheless, the
+concept of a pristine generation of stars, followed by a protogalactic era, and finally the mainstream stellar population is a plausible starting point for testing our physical understanding of star formation. 
+This will be observationally driven as never before in the coming decade. 
+In this paper, we search out observational tests of an idealized coeval and homogeneous distribution of population II stars.
+We examine the spatial distribution of quasars, globular clusters, and the integrated free electron density of the intergalactic medium, in order to test the assumption of homogeneity. 
+\end{abstract}
+
+\end{frontmatter}
+%\keywords{first stars -- cosmic microwave background -- globular clusters}
+
+%\maketitle
+
+\large{\bf Draft 24/11/17} 
+
+
+
+\section{Introduction}
+`{\it Where is Population III?}' is an important question \citep{Ishiyama2016} and often asked rhetorically. 
+The question asked in this paper -- whether population II stars are coeval and homogeneously distributed --  is no less important for different reasons.
+Whether population II is present in all galaxies and is coeval everywhere places constraints on cosmology and galaxy formation and could impact theories such as timescape cosmology \citep{Wiltshire2009} or the multiverse \citep{rees2001}. 
+More generally, comparing the observed age of Population II stars to the age of the Universe constrains the cosmological constant and is one of the three pillars supporting the standard model of cosmology, the others being the anisotropy of the cosmic microwave background \citep[CMB]{planck_params} and the Hubble diagram of type Ia supernovae \citep{Turner2001}. 
+
+In this work, we examine the spatial distribution of tracers of population II stars: Globular Clusters (GCs) at low-redshift (\S\ref{sec:gc}) and at high-redshift, quasi-stellar objects (QSOs; \S\ref{sec:qso}) ) and the optical depth to reionization along different lines of sight (\S\ref{sec:tau}). 
+Motivated by the apparent isotropy in GCs and anisotropy in the high-z QSO distribution, we conclude by discussing the possibility of a non-coeval population II objects. 
+
+%spatial distribution of QSOs and Globular Clusters (GCs) -- both tracers of population II stars. 
+%Motivated by apparent anisotropy in the QSO and GC distribution, we discuss the possibility of a non-uniform distribution of Pop II objects. 
+%We construct a test for such non-uniformity at low-redshift 
+%by using CMB measurements to probe the optical depth to reionization along different lines of sight.
+
+\section{Globular Clusters -- local tracers of old Pop II objects}\label{sec:gc}
+
+Globular clusters (GCs) have long been recognised as one of the oldest known stellar systems. Although many are probably destroyed over cosmic time, some survive till today, being ubiquitous around large galaxies and occasionally hosted by dwarf galaxies (see \cite{Brodie2006} for a review). Globular cluster systems usually reveal a bimodal colour distribution, which is largely due to a $\sim$ 1 dex difference in their metallicity \citep{Usher2012}. These blue/metal-poor and red/metal-rich subpopulations of GCs may also have a small difference in their mean age with the red/metal-rich GCs being younger $\sim$1 Gyr  (although formally it is difficult to rule out coeval ages). Current absolute age estimates for Milky Way GCs, based on main sequence and white dwarf cooling fitting, indicates that the blue/metal-poor GCs were formed around 12.5 Gyr ago, however the uncertainties on this value place the metal-poor GCs well within the epoch of reionisation (i.e. $z >$ 6, age $>$ 12.8 Gyr).  Extragalactic GCs are less well constrained but are consistent with the old ages of their Galactic counterparts \citep{Strader2005,Wagner-Kaiser2017}.
+For a summary of GC ages from observational constraints, and predictions from various simulations; see \cite{Forbes2015} and \cite{Mould1998}. More recently, a simulation of GC systems around Milky Way like galaxies by \cite{pfeffer2017} predicts GCs to start forming before a redshift of 6 and continue to earlier times. HST observations,  exploiting the amplification of strong lensing, have identified possible proto-GCs at $z = 6.1$ \citep{Vanzella2017}. 
+Another important feature of metal-poor GCs is that they appear to have a `metallicity floor', i.e. no GC has been observed with a metallicity [Z/H] below -2.5 (e.g. \citet{Usher2012}). The reason for this minimum metallicity is not yet fully understood but may be a combination of pre-enrichment by Pop III stars \citep{Beasley2003} and gas cooling by metals and molecules \citep{Glover2014}.
+
+
+In Figure \ref{fig:gc}, we show the space distribution of known GC systems from the compilation of \cite{Harris2013}. Although this compilation does not separate the two subpopulations, previous work has shown the blue/metal-poor subpopulation is found in all GC systems unlike the red/metal-rich subpopulation which is increasingly absent in lower mass galaxies \cite{Peng2006}. Thus the distribution can be taken as a proxy for the old, population II metal-poor GCs. 
+The GCs are isotropically distributed on the sky modulo the regions associated with the Galactic disk. 
+%
+
+
+
+\begin{figure*}
+\includegraphics[scale=0.7,]{gc1}
+%\includegraphics[scale=0.7, angle=-90]{gc1}
+%\vspace*{-2 truecm}  
+\caption{\label{fig:gc}
+The shell of globular cluster systems beyond 20 Mpc. Globular clusters
+beyond 100 Mpc are shown in red, with the most distant being globular clusters located in Abel 1689 at 790 Mpc or 2.5 Glyr.
+ Data are from the compilation of \citet{Harris2013}.}
+\end{figure*}
+
+\section{Quasars  -- tracing early Pop II objects} \label{sec:qso}
+
+Given a conservative lower limit of 12 Gyrs for the age of Population II, these stars formed at $z >6$  according to the standard model of cosmology with $Planck$ collaboration parameters \citep{planck_params}. 
+Unfortunately it is as yet infeasible to observe directly low-mass objects in this epoch, so we must rely on more luminous tracers of the star formation activity. 
+We turn to quasars because  (i) they are observationally feasible, and (ii) there is a well-discussed link between quasar activity and star formation rates in high-redshift galaxies. 
+For instance, a positive correlation between quasar luminosity and far-IR luminosity has been seen previously \citep{Wang2011,Omont2013,Venemans2016}.
+The spatial distribution of quasars at $z>6$ in the Million Quasar Catalog\footnote{ https://heasarc.gsfc.nasa.gov/w3browse/all/milliquas.html} \citep{Flesch2015}
+ is shown in Figure \ref{fig:qso}. 
+ Two features catch the eye: the Galactic plane, and some apparent voids. 
+The dearth of high-$z$ QSOs in the Galactic Plane is easily explained as obscuration by the Milky Way. 
+The largest void is at 12 hours right ascension and -60$^\circ$ declination. 
+ It appears to be of significant size ($\sim$1 Gpc in diameter), but this is an upper limit imposed by selection effects. 
+ The reasons for this apparent southern void are not understood, but likely fall into one of two camps. 
+ First, the void might be due to an unaccounted for selection effect related to the union of the heterogenous surveys that go into the Million Quasar Catalog. 
+ Second and more interestingly, the void could be real. 
+ If so, the void could point to large-scale anisotropies in the SFR at high-redshift in conflict with the predictions of the standard cosmological model. 
+
+ 
+ \begin{figure*}
+\includegraphics[scale=0.7, angle=-90]{qso2}  
+\caption{\label{fig:qso}
+QSOs with $z >$ 6 distributed on the sky. RA horizontal, Dec. vertical. We show the galactic plane $\pm$ 10$^\circ$ and in green the boundaries of the projection. A 30$^\circ$ radius void is shown in red.}
+\end{figure*}
+
+
+
+\section{A hypothetical void}\label{sec:tau}
+
+For the sake of argument let us suppose that the void in Figure 1 were real. This is a useful hypothesis to entertain as, if and when observers fill it, constraints on large scale inhomogeneities $(\S 1)$ will find application to cosmology. 
+A Gpc-scale void in $z >$ 6 QSOs begs the question: what triggers the formation of supermassive black holes \citep{Wang2017}? 
+If reflected in the star-formation rate, as suggested by the established connection between QSO activity and SFR at lower redshifts, this void also poses a new question: 
+could the reionization of the Universe by the first stars be delayed on such enormous scales?
+%A similar void in globular cluster systems poses a similar question, 
+
+We can test this hypothesis even before the advent of 21 cm experiments  by studying the CMB anisotropies in the direction of the hypothesized void.  
+Measurements of the CMB power spectra have already led to constraints on the average optical depth to reionization and thus the timing of reionization. 
+There are two main effects. 
+First, the optical depth screens the primordial CMB anisotropies and suppresses the power by a factor $e^{-2\tau}$ at all scales smaller than the horizon at the time of reionization. 
+Unfortunately for measuring the mean optical depth,  this signature is strongly  degenerate with the amplitude of the primordial scalar perturbations power spectrum, $A_s$.  
+Second,  Thomson scattering between the  CMB quadrupole and the free electrons from reionization generate linear polarization  at scales larger than the horizon size at the epoch of reionization. 
+This signal shows up in the CMB $E$ and $B-$mode polarization angular power spectra as a ``bump'' at low multipoles, with the power scaling as $\tau^2$. 
+The reionization bump is not degenerate with other cosmological parameters, but 
+careful cleaning of the galactic foregrounds is required at  these angular scales, $\ell \lesssim 10$. 
+The best constraints to date on the mean optical depth come from the \textit{Planck} satellite, $\tau = 0.058 \pm 0.012$, suggesting that reionization occurred around $z_{\rm re} \sim 8$ \citep{planck_reio}. 
+
+
+
+\subsection{Can we detect a lower optical depth towards the hypothetical void?}
+
+
+We can use current observations to go beyond the mean optical depth across the full sky. 
+We expect reionization to be a somewhat inhomogeneous process, and this inhomogeneity will cause variations in the optical depth integrated along different lines of sight. 
+Broadly speaking, a larger value of $\tau$ in a given direction implies a higher $z_{\rm re}$ and thus an earlier onset of star and galaxy formation; $\tau$ = 0 implies no reionization at all.  
+These variations in the optical depth will imprint a non-Gaussian signature in the CMB anisotropies. 
+The non-Gaussianity can be detected with higher-order statistics of the map, as was done by \cite{Gluscevic2013} and \cite{Namikawa2017}. 
+In the future, these methods will be able to create maps of the optical depth across the sky \citep{dvorkin2009}. 
+
+In this work, we construct a simple estimator for the optical depth in the direction of the void and other similarly-sized patches on the sky. 
+Under the reasonable assumption that the primordial amplitude $A_s$ is constant, the power spectrum in a given direction will relate to the full-sky CMB spectrum according to $\hat{C}^{TT}_{\ell}(\hat{\mathbf{n}}) = e^{-2(\tau(\hat{\mathbf{n}}) - \bar{\tau})}C_{\ell}^{TT,\,\rm full\,sky}$. 
+Thus variations in the power spectrum amplitude across the sky reflect variations in the optical depth $\tau$. 
+We use this idea to construct an estimator for the variation in the optical depth, $\delta\tau(\hat{\mathbf{n}}) = \tau(\hat{\mathbf{n}}) - \bar{\tau}$, as: 
+\begin{equation}
+\label{eq:tau_estimator}
+\delta\tau(\hat{\mathbf{n}}) = -\frac{1}{2}\ln \left( \frac{\sum_{\ell}\frac{\ell(\ell+1)}{2\pi}C^{TT}_{\ell}(\hat{\mathbf{n}})}{\sum_{\ell}\frac{\ell(\ell+1)}{2\pi}C^{TT, \,\rm full\,sky}_{\ell}}\right). 
+\end{equation}
+Details of how we calculate the power spectra and apply this estimator can be found in the appendix. 
+If the lack of high-redshift quasars in one direction is due to a delay in the onset of star formation and reionization, we would expect to see a lower optical depth and thus more CMB anisotropy power in that direction. 
+
+\begin{figure}
+\includegraphics[width=\columnwidth]{hist_plot}%df}  
+\caption{Histograms of the recovered optical depth fluctuations (with respect to the sky averaged value) in 72 randomly distributed circular patches of 10 degree radius. Blue colour shows the results for the \textit{Planck} \texttt{SMICA} map while results based on the simulated map are shown in green. The vertical red line denotes the inferred value of $\tau$ in the hypothetical QSO void. The solid smooth lines represent kernel density estimates to the underlying distribution functions.}
+\label{fig:tau_hist}
+\end{figure}
+
+The hypothesis that the QSO void is associated with a late reionization region therefore predicts  a negative $\delta\tau$ in the direction of the void. 
+  To test this prediction, we estimate the optical depth over the $z \sim 6$ QSO void and also over a number of randomly positioned, same sized fields.
+The results are shown in Fig.~\ref{fig:tau_hist}. 
+  In the plot, we also compare the distribution of the inferred $\tau$ values at the same locations for  simulated noisy CMB temperature maps that do not include an inhomogeneous reionization signal. The first thing we notice is that the $\tau$ distribution found for real data appears to be slightly more non-Gaussian than the one found for simulations. 
+  In particular, the distribution shows a positive $\tau$ tail, suggestive of early reionization in some areas. 
+  We have tried varying the multipole range or reducing the mask radius to 5$^\circ$, and find the positive tail in all cases although its magnitude changes. 
+Interestingly, the relative optical depth found in the hypothetical QSO void is negative as would be expected for a region with delayed reionization, however the magnitude is not statistically significant. 
+
+
+
+Looking to the future, observations of 21 cm emission from neutral hydrogen should prove useful for tracking a more 
+detailed reionization history and structure \citep{Jacobs2016}. 
+Deep surveys continue to discover 
+new galaxies at high redshifts (e.g. $z > 10$, \cite{Oesch2016}), and the James Webb Space Telescope will provide even greater
+ detection sensitivity for distant galaxies near the beginning of reionization \citep{Wang2017}. WFIRST may see and record the history of the formation of GC systems \citep{Renzini2017}.
+Improved constraints on $\tau$ are also expected from future high sensitivity observations of CMB polarization signals, such as CMB-S4 \citep{cmbs4} or the proposed CMBPol satellite \citep{Zaldarriaga2008}.  
+\cite{Su2011} have considered inhomogeneous reionization and conclude that experiments such as CMBPol will be able to achieve a detection.
+
+
+\section{Conclusion}
+There are a number of avenues by which inhomogeneities in Population II can be detected and confirmed. These include deeper all sky mapping of QSOs with $z >$ 6, deep Hubble Space Telescope imaging of rich globular cluster systems as $z >$ 0.1, polarisation mapping of the CMB and imaging of reionization at 21 cm. This in turn will constrain some nonstandard inhomogeneous cosmologies, such as timescape and the multiverse.
+
+
+%\section*{References}
+%Adam, R. \etal 2016, A\&A, 596, A108\\
+%Ade, P. \etal 2016, A\&A, 594, 13\\
+%Abazajian, K.~N. \etal 2016, arxiv:1610.02743\\
+%Beasley,  M.~A., Kawata D., Pearce F.~R., Forbes D.~A., Gibson B.~K., 2003, ApJ, 596, L187\\
+%Brodie,  J.~P., Strader J., 2006, ARA\&A, 44, 193 \\
+%Dvorkin, C., Smith, K.~M., 2009,  PRD 79, 043003\\
+%Flesch, E. 2015, PASA, 32, 10\\
+%Forbes, D.~A., Pastorello N., Romanowsky A.~J., Usher C., Brodie J.~P., Strader J., 2015, MNRAS, 452, 1045 \\
+%Glover, S.~C.~O., Clark P.~C., 2014, MNRAS, 437, 9 \\
+%Gluscevic, V., Kamionkowski, M., Hanson, D., 2013, PRD, 87, 4\\ 
+%G{\'o}rski, K.~M., Hivon, E., Banday, A.~J., Wandelt, B.~D., Hansen, F.~K., Reinecke, M., Bartelmann, M., 2005, ApJ, 622, 759\\
+%Harris,  W.~E., Harris G.~L.~H., Alessi M., 2013, ApJ, 772, 82 \\
+%Hivon, E., Gorski, K.~M., Netterfield, C.~B., Crill, B.~P.~C., Prunet, S., Hansen, F., 2002, ApJ, 567, 2\\
+%Ishiyama, T. \etal 2016, ApJ, 826, 9\\ %omoaki; Sudo, Kae; Yokoi, Shingo; Hasegawa, Kenji; Tominaga, Nozomu; Susa, Hajime	
+%%Where are the Low-mass Population III Stars?
+%Jacobs, D. \etal 2016, ApJ, 825, 114 \\%Hazelton, B. J.; %Trott, C. M.; %Dillon, Joshua S.; Pindor, B.; %Sullivan, I. S.; Pober, J. C.; %Barry, N.; Beardsley, A. P.; %Bernardi, G.; and 54 %coauthors
+%%The Murchison Widefield Array 21 %cm Power Spectrum Analysis %Methodology
+%Marigo, P. 2017, in {\it Stellar Populations and the distance scale}, ASP Conf Ser, ed. J. Jensen, in press.\\
+%Mould, J. 1998, Nature, 395, 20\\
+%Namikawa, T., 2017, arXiv:1711.00058\\
+%Oesch, P. et al 2016, ApJ, 819, 129\\
+%Peng,  E.~W., et al., 2006, ApJ, 639, 95\\
+%Pfeffer, J., \etal 2017, in prep.\\
+%Planck Collaboration,  2016, AA, 596, A108 \\
+%Rees, M. 2001, arxiv 01.01268 \\
+%Renzini, A. 2017, MNRAS, 469, L63
+%Strader, J., Brodie J.~P., Cenarro A.~J., Beasley M.~A., Forbes D.~A., 2005, AJ, 130, 1315 \\
+%Su, M. et al 2013, arxiv 1106.4313 \\
+%Turner, M. 2001, arXiv 01.08103 \\
+%Usher, C., et al.  2012, MNRAS, 426, 1475 \\
+%Vanzella, E., and 19 colleagues 2017. MNRAS, 467, 4304.\\
+%Wagner-Kaiser R., et al.  2017, MNRAS, 471, 3347 \\
+%Wang, L \etal 2017, arxiv 1710.7005\\
+%Wiltshire, D. 2009, IJMPD, 18, 2121\\
+%Zaldarriaga, M. \etal, 2008, arxiv:0811.3918\\
+
+
+\bibliographystyle{pasa-mnras}
+\bibliography{references}
+
+
+\begin{acknowledgements}
+%\begin{acknowledgments}
+Parts of this research were conducted by the Australian Research Council Centre of Excellence
+for All-Sky Astrophysics under grant CE11E0090. FB acknowledges support from an Australian Research Council Future Fellowship (FT150100074). Some of the results in this paper have been derived using the HEALPix \citep{healpix} package.
+%\end{acknowledgments}
+\end{acknowledgements}
+
+
+\appendix
+\section{Optical depth estimator and power spectrum estimation}
+In this appendix, we describe the power spectrum estimation and motivation for the specific form of the estimator in more detail. 
+
+\subsection{Masks}
+
+The first step in calculating a CMB power spectrum is to define the mask on the sky over which the spectrum will be taken. 
+We begin by creating a baseline, `full-sky' mask. 
+This is the 20\% galactic mask  ($f_{\rm sky}=0.8$) provided by the \textit{Planck} collaboration. 
+We apodize the edges with a 2$^\circ$ taper and also mask point sources detected in the high frequency \textit{Planck} channels. 
+This mask is used to calculate the full-sky CMB spectrum following the procedure below. 
+
+We also want to create masks that select specific regions of the sky.  
+Based on the alleged QSO void morphology,  we construct circular masks of $10^\circ$  radius that  we apodize with a Gaussian taper of FWHM of 30 arcmin. 
+These circular masks are multiplied by the full-sky mask in order to avoid the galaxy or bright sources. 
+We also impose a restriction that the circles overlap by less than 30\%. 
+With this restriction, the size of the circular mask dictates the number of roughly independent patches on the sky. 
+We find 72 random locations for $10^\circ$  radius circular patches. 
+
+
+
+\subsection{Power spectrum estimation}
+\label{app:ps-estimation}
+For each mask, we measure cross-spectra between the two half-mission foreground-cleaned \texttt{SMICA} CMB temperature maps\footnote{http://irsa.ipac.caltech.edu/data/Planck/release\_2/all-sky-maps/matrix\_cmb.html} (provided in the \texttt{HEALPix}\footnote{http://healpix.sourceforge.net/} format at an angular resolution of 5 arcmin)  to avoid noise debiasing. 
+We smoothly bandpass the temperature maps between $200 < \ell < 2000$ on the full-sky before extracting the cross-spectra on individual patches. 
+The effect of masking, beam smoothing and pixelation on the recovered spectra is taken into account through the use of the MASTER algorithm (Hivon et al. 2002). 
+The reference full-sky power spectrum (the denominator in Eq.~\ref{eq:tau_estimator}) is estimated with the baseline mask above. 
+The numerator is calculated from one of the circular masks. 
+
+\subsection{Further details on the estimator} 
+
+There are three points to note about Eq.~\ref{eq:tau_estimator}. 
+First, the sum is over a multipole range $\ell \in [300,1900]$. 
+The lower end of this range is set by the finite size of the circular patches, while the upper end  is selected based on where instrumental noise and foregrounds become significant. 
+Second we have chosen to use $\frac{\ell(\ell+1)}{2\pi} C_\ell$ instead of $C_\ell$ in the sum to avoid over-weighting large angular scales. 
+Finally, the estimator uses the ratio of the summed power instead of summing ratios for stability reasons. 
+
+We note that the existence of a positive tail in the real distribution is robust to these analysis choices, although the magnitude of the tail varies. 
+The same phenomenology is seen if the radius of the circular regions is reduced to 5$^\circ$; the limited number of patches makes it hard to draw conclusions when the radius is instead increased to 20$^\circ$. 
+Positive tails are likewise still seen then the multipole range is varied by either increasing the lower limit to 650 or decreasing the upper limit to 1100 or 1600. 
+A positive tail corresponds to lines of sight that undergo earlier reionization. 
+
+\end{document}
+
+
+
+
+
